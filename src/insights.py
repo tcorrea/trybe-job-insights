@@ -1,5 +1,6 @@
-# from jobs import read
 from src.jobs import read
+
+# from jobs import read
 
 
 def get_unique_job_types(path: str) -> list[str]:
@@ -21,7 +22,7 @@ def get_unique_job_types(path: str) -> list[str]:
     # {} set -> elementos unicos
     # job["job_type"] -> chave que o requisito pede
     # list() -> converte para lista
-    return list({job["job_type"] for job in jobs})
+    return list({job["job_type"] for job in jobs if job["job_type"]})
 
 
 def filter_by_job_type(jobs, job_type):
@@ -42,7 +43,7 @@ def filter_by_job_type(jobs, job_type):
     return []
 
 
-def get_unique_industries(path):
+def get_unique_industries(path: str) -> list[str]:
     """Checks all different industries and returns a list of them
 
     Must call `read`
@@ -57,7 +58,11 @@ def get_unique_industries(path):
     list
         List of unique industries
     """
-    return []
+    jobs: list[dict] = read(path)
+    # {} set -> elementos unicos
+    # job["job_type"] -> chave que o requisito pede
+    # list() -> converte para lista
+    return list({job["industry"] for job in jobs if job["industry"]})
 
 
 def filter_by_industry(jobs, industry):

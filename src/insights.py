@@ -109,7 +109,7 @@ def get_max_salary(path: str) -> int:
     return max_salary
 
 
-def get_min_salary(path):
+def get_min_salary(path) -> int:
     """Get the minimum salary of all jobs
 
     Must call `read`
@@ -135,7 +135,7 @@ def get_min_salary(path):
     return min_salary
 
 
-def matches_salary_range(job: dict, salary: int):
+def matches_salary_range(job: dict, salary: int) -> bool:
     """Checks if a given salary is in the salary range of a given job
 
     Parameters
@@ -172,7 +172,7 @@ def matches_salary_range(job: dict, salary: int):
     return job["min_salary"] <= salary <= job["max_salary"]
 
 
-def filter_by_salary_range(jobs, salary):
+def filter_by_salary_range(jobs: list[dict], salary: int) -> list[dict]:
     """Filters a list of jobs by salary range
 
     Parameters
@@ -187,4 +187,13 @@ def filter_by_salary_range(jobs, salary):
     list
         Jobs whose salary range contains `salary`
     """
-    return []
+    found_jobs = list()
+
+    for job in jobs:
+        try:
+            if matches_salary_range(job, salary):
+                found_jobs.append(job)
+        except ValueError:
+            pass
+
+    return found_jobs

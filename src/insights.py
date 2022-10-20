@@ -25,7 +25,7 @@ def get_unique_job_types(path: str) -> list[str]:
     return list({job["job_type"] for job in jobs if job["job_type"]})
 
 
-def filter_by_job_type(jobs, job_type):
+def filter_by_job_type(jobs: list[dict], job_type: str):
     """Filters a list of jobs by job_type
 
     Parameters
@@ -40,7 +40,7 @@ def filter_by_job_type(jobs, job_type):
     list
         List of jobs with provided job_type
     """
-    return []
+    return [job for job in jobs if job["job_type"] == job_type]
 
 
 def get_unique_industries(path: str) -> list[str]:

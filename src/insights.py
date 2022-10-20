@@ -25,7 +25,7 @@ def get_unique_job_types(path: str) -> list[str]:
     return list({job["job_type"] for job in jobs if job["job_type"]})
 
 
-def filter_by_job_type(jobs: list[dict], job_type: str):
+def filter_by_job_type(jobs: list[dict], job_type: str) -> list[dict]:
     """Filters a list of jobs by job_type
 
     Parameters
@@ -65,7 +65,7 @@ def get_unique_industries(path: str) -> list[str]:
     return list({job["industry"] for job in jobs if job["industry"]})
 
 
-def filter_by_industry(jobs, industry):
+def filter_by_industry(jobs: list[dict], industry: str) -> list[dict]:
     """Filters a list of jobs by industry
 
     Parameters
@@ -80,7 +80,7 @@ def filter_by_industry(jobs, industry):
     list
         List of jobs with provided industry
     """
-    return []
+    return [job for job in jobs if job["industry"] == industry]
 
 
 def get_max_salary(path: str) -> int:

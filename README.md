@@ -16,7 +16,7 @@ Estrutura do projeto e descrição dos arquivos que foram desenvolvidos por mim 
   🔸Arquivos desenvolvidos pela Trybe (não foram alterados).
   🔹Arquivos desenvolvidos por mim.
   .
-  ├──🔸README.md
+  ├──🔹README.md
   ├──🔸Dockerfile
   ├──🔸docker-compose.yml
   ├──🔸dev-requirements.txt

@@ -119,8 +119,6 @@ Para começarmos a processar os dados, devemos antes carregá-los em nossa aplic
 
 </details>
 
-<br>
-
 ## 2 - Implemente a função `get_unique_job_types`
 
 > **Implemente em:** [`src/insights.py`](https://github.com/tcorrea/trybe-job-insights/blob/main/src/insights.py)
@@ -141,8 +139,6 @@ Agora que temos como carregar os dados, podemos começar a extrair informação 
 
 </details>
 
-<br>
-
 ## 3 - Implemente a função `get_unique_industries`
 
 > **Implemente em:** [`src/insights.py`](https://github.com/tcorrea/trybe-job-insights/blob/main/src/insights.py)
@@ -160,8 +156,6 @@ Da mesma forma, agora iremos identificar quais indústrias estão representadas 
 ![carbon (5)](https://user-images.githubusercontent.com/20843662/201547684-9751b514-1064-4d6d-b773-a20260495ce0.png)
 
 </details>
-
-<br>
 
 ## 4 - Implemente a função `get_max_salary`
 
@@ -182,8 +176,6 @@ Os dados apresentam faixas salariais para cada emprego exibido. Vamos agora enco
 
 </details>
 
-<br>
-
 ## 5 - Implemente a função `get_min_salary`
 
 > **Implemente em:** [`src/insights.py`](https://github.com/tcorrea/trybe-job-insights/blob/main/src/insights.py)
@@ -202,8 +194,6 @@ Os dados apresentam faixas salariais para cada emprego exibido. Vamos agora enco
 ![carbon (7)](https://user-images.githubusercontent.com/20843662/201548003-970cf485-5eca-4ba7-87b3-c272f8ae1b27.png)
 
 </details>
-
-<br>
 
 ## 6 - Implemente a função `filter_by_job_type`
 
@@ -224,8 +214,6 @@ Os empregos estão listados em um aplicativo web. Para permitir que a pessoa usu
 
 </details>
 
-<br>
-
 ## 7 - Implemente a função `filter_by_industry`
 
 > **Implemente em:** [`src/insights.py`](https://github.com/tcorrea/trybe-job-insights/blob/main/src/insights.py)
@@ -244,8 +232,6 @@ Do mesmo modo, o aplicativo precisa permitir uma filtragem por indústria. Vamos
 ![carbon (9)](https://user-images.githubusercontent.com/20843662/201548308-736e617e-dde1-4f47-8980-52504719e18d.png)
 
 </details>
-
-<br>
 
 ## 8 - Implemente a função `matches_salary_range`
 
@@ -271,8 +257,6 @@ O aplicativo vai precisar filtrar os empregos por salário também. Como uma fun
 
 </details>
 
-<br>
-
 ## 9 - Implemente a função `filter_by_salary_range`
 
 > **Implemente em:** [`src/insights.py`](https://github.com/tcorrea/trybe-job-insights/blob/main/src/insights.py)
@@ -292,8 +276,6 @@ Agora vamos implementar o filtro propriamente dito. Para esta filtragem, podemos
 ![carbon (11)](https://user-images.githubusercontent.com/20843662/201548505-8c2c6282-5aed-44f4-a6c6-cca01d1d1454.png)
 
 </details>
-
-<br>
 
 ## 10 - Implemente um teste para a função `count_ocurrences`
 
@@ -318,8 +300,6 @@ O nome deste teste **deve** ser `test_counter`, e ele deve garantir que atenda e
 
 </details>
 
-<br>
-
 ## 11 - Implemente um teste para a função `read_brazilian_file`
 
 > **Implemente em:** [`tests/brazilian/test_brazilian_jobs.py`](https://github.com/tcorrea/trybe-job-insights/blob/main/tests/brazilian/test_brazilian_jobs.py)
@@ -343,13 +323,9 @@ O nome deste teste **deve** ser `test_brazilian_jobs`, e ele deve garantir que a
 
 </details>
 
-<br>
-
 ## 12 - Implemente um teste para a função `sort_by`
 
 > **wip:** //TODO
-
-<br>
 
 ## 13 - (`Bônus`) Implemente a página de um job
 
